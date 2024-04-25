@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+html,body{
+    width:100%;
+    height:100%;  
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(59, 57, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-container h1{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+}
+.game{
+    margin-top: 100px;
+    width: 40%;
+    height: 68%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) , rgba(0,0,0,0.2)), url(./ai-generated-8677465_1280.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box{
+    width: 30%;
+    height: 30%;
+    background-color: rgba(255, 255, 255, 0.308);
+    cursor: pointer;
+    border: 1px solid black;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(238, 230, 230);
+    font-weight: 999;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box:hover{
+    background-color: rgba(212, 207, 207, 0) ;
+}
+p{
+    font-size: 30px;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: black;
+    margin-top: 20px;
+    /* border: 4px; */
+    border-radius: 4px;
+}
+
+h6{
+    color: white;
+}
+
+@media (max-width:633px) {
+    .game{
+        margin-top: 100px;
+        width: 68%;
+        height: 55%;
+    }
+    
+}
+
+@media (max-width:529px) {
+    .game{
+        margin-top: 100px;
+        width: 40%;
+        height: 34%;
+    }
+    .box{
+        width: 28%;
+        height: 25%;
+    }
+    
+}
+
+@media (max-width:415px) {
+    .game{
+        margin-top: 150px;
+        width: 50%;
+        height: 30%;
+    }
+    .box{
+        width: 24%;
+        height: 25%;
+    }
+    
+}
+
+@media (max-width:277px) {
+    .game{
+        /* margin-top: 150px; */
+        width: 70%;
+        height: 35%;
+    }
+    .box{
+        width: 24%;
+        height: 25%;
+    }
+    .main-container  h1{
+        font-size: 30px;
+    }
+    .main-container{
+        justify-content: flex-start;
+    }
+    
+}
+
+@media (max-width:215px) {
+    .game{
+        /* margin-top: 150px; */
+        width: 70%;
+        height: 25%;
+    }
+    .box{
+        width: 24%;
+        height: 25%;
+    }
+    .main-container  h1{
+        font-size: 30px;
+    }
+    .main-container{
+        justify-content: flex-start;
+    }
+    
+}
